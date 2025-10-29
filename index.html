@@ -20,56 +20,100 @@
       <button class="logout-btn">Logout</button>
     </div>
   </header>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Logo" class="logo" />
+      <span>Courses</span>
+    </div>
+    <div class="header-right">
+      <span>Harry Potter</span>
+      <button class="button">Logout</button>
+    </div>
+  </header>
 
-  <main class="container">
-    <div class="top-bar">
-      <input type="text" class="search-input" placeholder="Input text" />
-      <button class="search-btn">Search</button>
-      <button class="add-btn">Add new</button>
+  <!-- Courses section -->
+  <section class="courses">
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Input text" />
+      <button class="button">Search</button>
+      <button class="button">Add new</button>
     </div>
 
-    <div class="course-card">
-      <h2>Angular</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s...</p>
-      <p><b>Authors:</b> Dave Haisenberg, Tony Ja<br>
-         <b>Duration:</b> 2:30 hours<br>
-         <b>Created:</b> 20.03.2012</p>
-      <div class="actions">
-        <button class="show-btn">Show course</button>
-        <button class="icon-btn">&#128465;</button>
-        <button class="icon-btn">&#9998;</button>
+    <!-- List of courses -->
+    <div class="courses-list">
+      <!-- Course 1 -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-main-info">
+            <h2 class="course-title">Angular</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s...
+            </p>
+          </div>
+          <div class="course-details">
+            <div class="detail-item"><strong>Authors:</strong> <span class="authors-list">Dave Haisenberg, Tony Ja</span></div>
+            <div class="detail-item"><strong>Duration:</strong> 2:30 hours</div>
+            <div class="detail-item"><strong>Created:</strong> 20.03.2012</div>
+            <div class="detail-item">
+              <button class="button">Show course</button>
+              <button class="button">✏️</button>
+              <button class="button">🗑️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-main-info">
+            <h2 class="course-title">React</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s...
+            </p>
+          </div>
+          <div class="course-details">
+            <div class="detail-item"><strong>Authors:</strong> <span class="authors-list">Dave Simonds, Valentina Lary</span></div>
+            <div class="detail-item"><strong>Duration:</strong> 1:00 hours</div>
+            <div class="detail-item"><strong>Created:</strong> 14.08.2017</div>
+            <div class="detail-item">
+              <button class="button">Show course</button>
+              <button class="button">✏️</button>
+              <button class="button">🗑️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-main-info">
+            <h2 class="course-title">ASP .NET</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s...
+            </p>
+          </div>
+          <div class="course-details">
+            <div class="detail-item"><strong>Authors:</strong> <span class="authors-list">Sam Smith, Tony Robbins</span></div>
+            <div class="detail-item"><strong>Duration:</strong> 3:30 hours</div>
+            <div class="detail-item"><strong>Created:</strong> 01.06.2022</div>
+            <div class="detail-item">
+              <button class="button">Show course</button>
+              <button class="button">✏️</button>
+              <button class="button">🗑️</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="course-card">
-      <h2>React</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s...</p>
-      <p><b>Authors:</b> Dave Simonds, Valentina Lary<br>
-         <b>Duration:</b> 1:00 hours<br>
-         <b>Created:</b> 14.08.2017</p>
-      <div class="actions">
-        <button class="show-btn">Show course</button>
-        <button class="icon-btn">&#128465;</button>
-        <button class="icon-btn">&#9998;</button>
-      </div>
-    </div>
-
-    <div class="course-card">
-      <h2>ASP .NET</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s...</p>
-      <p><b>Authors:</b> Sam Smith, Tony Robbins<br>
-         <b>Duration:</b> 3:30 hours<br>
-         <b>Created:</b> 01.06.2022</p>
-      <div class="actions">
-        <button class="show-btn">Show course</button>
-        <button class="icon-btn">&#128465;</button>
-        <button class="icon-btn">&#9998;</button>
-      </div>
-    </div>
-  </main>
+  </section>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
